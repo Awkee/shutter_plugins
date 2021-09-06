@@ -1,0 +1,2 @@
+# shutter_plugins
+一些免费的shutter插件，图片上传插件以及一些图片处理脚本
