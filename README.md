@@ -3,6 +3,19 @@
 
 ## 上传插件
 
+上传插件通常在Linux的这个目录下存放：
+```
+/usr/share/shutter/resources/system/upload_plugins/upload
+```
+
+因此，使用下面这些插件的办法就是将插件文件复制到这个目录里，并且赋可执行权限：
+```bash
+sudo cp -f ./Imgur.pm /usr/share/shutter/resources/system/upload_plugins/upload/
+sudo cp -f ./SMMS.pm /usr/share/shutter/resources/system/upload_plugins/upload/
+
+sudo chmod +x /usr/share/shutter/resources/system/upload_plugins/upload/*.pm
+```
+
 ### SM.MS上传插件
 
 使用方式有两种：
