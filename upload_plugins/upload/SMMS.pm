@@ -31,8 +31,6 @@ use POSIX qw/setlocale/;
 use Locale::gettext;
 use Glib qw/TRUE FALSE/;
 use Data::Dumper;
-use File::Basename;
-use Tie::IxHash; # Preserve insertion order of the hash
 
 use Shutter::Upload::Shared;
 our @ISA = qw(Shutter::Upload::Shared);
