@@ -48,6 +48,10 @@ my %upload_plugin_info = (
     'supports_authorized_upload'    => FALSE,                        #TRUE if username/password are supported (might be in addition to anonymous_upload)
     'supports_oauth_upload'         => FALSE,                        #TRUE if OAuth is used (see Dropbox.pm as an example)
 );
+
+sub debug_info {
+	print @_;
+}
  
 binmode( STDOUT, ":utf8" );
 if ( exists $upload_plugin_info{$ARGV[ 0 ]} ) {
@@ -55,10 +59,6 @@ if ( exists $upload_plugin_info{$ARGV[ 0 ]} ) {
     exit;
 }
 
-
-sub debug_info {
-	print @_;
-}
 
 #don't touch this
 sub new {
